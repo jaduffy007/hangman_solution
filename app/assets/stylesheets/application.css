@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+input #modals-new-game {
+    width: 100%;
+    padding: 3px;
+    font-size: 20px;
+  }
+
+.container {
+  position: relative;
+}
+
+#title {
+  color: @gray;
+  text-align: center;
+  font-size: 60px;
+  position: absolute;
+  top: 10px; left: 0px; right: 0px;
+  margin: auto;
+  width: 200px;
+}
+
+menu {
+  padding: 30px;
+  background: @gray-lighter;
+  border-radius: 5px;
+  font-size: 25px;
+  float: right;
+  width: 40%;
+  margin-top: 140px;
+  label {
+    color: @gray;
+    padding-right: 10px;
+    font-weight: bold;
+  }
+  .available-letters {
+    width: 100%;
+    div {
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      display: inline-block;
+      background: @gray-light;
+      margin: 3px;
+      width: 40px;
+      text-align: center;
+      border-radius: 3px;
+    }
+  }
+}
+
+line, circle {
+  stroke: black;
+  stroke-width: 4;
+}
+
+.word {
+  text-align: center;
+  font-size: 80px;
+}
+
+.underlined-letter {
+    height: 120px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 0px 15px;
+}
+    .letter {
+      color: @gray;
+      height: 100px;
+      width: 50px;
+  }
+      .invisible {
+        visibility: hidden;
+      }
+
+.underline {
+  border-bottom: 5px solid black;
+}
